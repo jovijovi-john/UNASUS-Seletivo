@@ -1,0 +1,43 @@
+.fale-conosco {
+    background-color: var(--baby_blue);
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container-contatos {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .contatos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right:20px ;
+            p {
+                max-width: 550px;
+                font-size: 24px;
+            }
+
+            .buttons {
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                justify-content: space-evenly;
+
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .mapa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

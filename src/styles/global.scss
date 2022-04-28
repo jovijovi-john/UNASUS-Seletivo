@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_blue: #4441df;
+    --hover_blue: #2b2996;
+    --primary_pink: #F51051;
+    --hover_pink: #9b0d35;
+    --grey: #DADADA;
+    --baby_blue: #E7F6FC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+    li {
+        padding: 34px 12px;
+        a {
+            font-size: 24px;
+            color: #000;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    height: 126px;
+    background-color: var(--baby_blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

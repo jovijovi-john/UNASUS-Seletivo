@@ -1,0 +1,15 @@
+.nossos-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--baby_blue);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    .numeros {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}

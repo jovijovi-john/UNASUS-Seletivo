@@ -1,0 +1,45 @@
+a.button {
+    display: flex;
+    width: 80%;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+    transition: 0.3s background;
+}
+
+.up {
+    position: absolute;
+    bottom: 20px;
+}
+
+a.m-button{
+    height: 60px;
+}
+
+a.sm-button{
+    height: 51px;
+    border-radius: 0px;
+}
+
+a.s-btn {
+    height: 42px;
+    font-size: 28px;
+}
+
+a.pink-btn {
+    background-color: var(--primary_pink);
+}
+
+a.blue-btn {
+    background-color: var(--primary_blue);
+}
+
+a.blue-btn:hover {
+    background-color: var(--hover_blue);
+}
+
+a.pink-btn:hover {
+    background: var(--hover_pink);
+}

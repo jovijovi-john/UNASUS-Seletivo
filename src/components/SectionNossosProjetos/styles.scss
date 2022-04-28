@@ -1,0 +1,20 @@
+.nossos-projetos {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+
+    aside {
+        background-color: var(--primary_blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:50px;
+    }
+
+    .projetos {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        place-items: center;
+    }
+}

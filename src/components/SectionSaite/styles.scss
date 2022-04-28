@@ -1,0 +1,35 @@
+.saite {    
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    background-image: url("../../assets/background_main.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: var(--primary_blue);
+    padding: 40px 0;
+    height: 493px;
+
+    .saite-title-box {
+        display: grid;
+        place-items: center;
+
+        span {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 80px;
+        }
+    }
+
+    .content-saite{
+
+        display: grid;
+        place-items: center;
+
+        p {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+    }
+}

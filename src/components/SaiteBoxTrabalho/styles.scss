@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    align-items: center;
+
+    a {
+        display: flex;
+        align-items: center;
+        color: #000;
+    }
+
+    p {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+}
+
+.middle-box {
+    background-color: var(--baby_blue);
+}
