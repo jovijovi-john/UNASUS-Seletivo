@@ -12,18 +12,18 @@ export function AccessibilityBar(){
         <div className="container-accessibility">
             
             <div className="options-acessibility">
-                <div>
+                <a href="#">
                     <Wheelchair />
                     <span>Acessibilidade</span>
-                </div>
-                <div className="contrast">
+                </a>
+                <a href="#" className="contrast">
                     <Contrast />
                     <span>Alto Contraste</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <Diagram />
                     <span>Mapa do site</span>
-                </div>
+                </a>
             </div>
 
             <div className="social-icons">
