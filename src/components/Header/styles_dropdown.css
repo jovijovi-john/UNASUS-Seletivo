@@ -1,14 +1,8 @@
 :root {
     --header-background-color: #fff; /*cor do background do header*/
    
-    --link-web-color: #4e4e4e; /*cor do link na versão web*/
-    --link-web-color-hover: var(--primary_pink); /*cor do link no evento de hover na versão web*/
-   
     --link-dropdown-color: #fff; /*cor do link quando o menu dropdown for aberto*/
     --link-dropdown-hover-color: #fff; /*cor do link no evento hover quando o menu dropdown for aberto*/
-   
-    --icon-menu-color: #007e83; /*cor do icone hamburguer(icon-menu) */
-    --icon-close-color:#fff; /*cor do icone X(icon-close) obs: so aparece quando abrir o dropdown */
    
     --background-dropdown-color: var(--primary_pink);  /*cor do background do menu dropdown quando for aberto*/
 }
@@ -46,13 +40,6 @@ nav.container-menu{
     justify-content: space-between;
 }
 
-nav.container-menu .icon-close {
-    color: var(--icon-close-color);
-}
-
-nav.container-menu .icon-menu {
-    color: var(--icon-menu-color);
-}
 
 /* definindo o cursor do tipo ponteiro nos icones do dropdown-menu */
 nav.container-menu .icon-close, 
@@ -105,7 +92,6 @@ nav.container-menu .menu ul li:hover, .li-selected{
 
 /* Links */
 nav.container-menu .menu ul .dropdown-link {
-    color: var(--link-web-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,22 +108,6 @@ nav.container-menu .menu ul .dropdown-link:hover,
 nav.container-menu .menu ul li.li-selected .dropdown-link   {
     color: #fff;
 }
-
-/* nav.container-menu .menu ul .dropdown-link::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: var(--link-web-color-hover);
-    position: absolute;
-    left: 0;
-    bottom: -1.5rem;
-    transition: width 0.3s;
-}
-
-nav.container-menu .menu ul .dropdown-link:hover::after {
-    width: 100%;
-} */
-
 
 /* Links no dropdown */
 
