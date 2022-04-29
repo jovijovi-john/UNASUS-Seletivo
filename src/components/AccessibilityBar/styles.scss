@@ -1,0 +1,48 @@
+.container-accessibility {
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 250px;
+
+    .options-acessibility{
+        display: flex;
+        gap: 1.25rem;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            padding: .1rem .3rem;
+        }
+
+        .contrast {
+            border: 2px solid var(--primary_blue);
+            border-radius: 20px;
+        }
+    }
+    
+    .social-icons {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container-accessibility {
+        padding-right: 0;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container-accessibility {
+        .options-acessibility {
+            span {
+                display: none;
+            }
+        }
+    }
+}

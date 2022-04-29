@@ -38,8 +38,8 @@ nav.container-menu{
     height: 6.25rem;
     width: 100%;
     
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
     
     display: flex;
     align-items: center;
@@ -196,6 +196,13 @@ nav.container-menu.show-menu .menu ul {
     display: grid;
     gap: 2rem;
 }   
+
+@media (min-width: 450px) {
+    nav.container-menu {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
 
 @media (min-width: 992px){
     
