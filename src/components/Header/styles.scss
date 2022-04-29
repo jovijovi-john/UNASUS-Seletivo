@@ -1,45 +1,4 @@
-header {
-    display: flex;
-    padding-left: 48px;
-    padding-right: 48px;
-
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-
-    .logo-container {
-        display: flex;
-        align-items: center;
-        height: 100%;
-
-        img.text-logo {
-            height: 60px;
-        }
-    }
-
-    nav {
-        height: 100%;
-        ul {
-            height: 100%;
-            li {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: background .3s;
-
-                a {
-                    display: flex;
-                    align-items: center;
-                    height: 100px;
-                }
-            }
-
-            .li-selected, li:hover{
-                background-color: var(--primary_blue);
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
+.fixed {
+    position: fixed;
+    z-index: 1000;
 }

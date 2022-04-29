@@ -2,7 +2,7 @@
     --header-background-color: #fff; /*cor do background do header*/
    
     --link-web-color: #4e4e4e; /*cor do link na versão web*/
-    --link-web-color-hover: #007e83; /*cor do link no evento de hover na versão web*/
+    --link-web-color-hover: var(--primary_pink); /*cor do link no evento de hover na versão web*/
    
     --link-dropdown-color: #fff; /*cor do link quando o menu dropdown for aberto*/
     --link-dropdown-hover-color: #fff; /*cor do link no evento hover quando o menu dropdown for aberto*/
@@ -10,35 +10,36 @@
     --icon-menu-color: #007e83; /*cor do icone hamburguer(icon-menu) */
     --icon-close-color:#fff; /*cor do icone X(icon-close) obs: so aparece quando abrir o dropdown */
    
-    --background-dropdown-color: #007e83;  /*cor do background do menu dropdown quando for aberto*/
+    --background-dropdown-color: var(--primary_pink);  /*cor do background do menu dropdown quando for aberto*/
 }
 
 /* ----- Menu -------------------------------------------------------- */
 
 .header-menu {
     background-color: var(--header-background-color);
-    margin-bottom: 2rem;
-    box-shadow: 0px 0px 12px rgba(37, 37, 37, 0.15);
     
     display: flex;
     width: 100%;
 
     top: 0;
     left: 0;
-    position: fixed;
+}
 
-    background-color: var(--body-color);
+.header-menu .logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 nav.container-menu{ 
     /* rem == root element  ->   4.5 * 16 == 74;*/
 
-    height: 4.5rem;
+    height: 6.25rem;
     width: 100%;
     
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     
     display: flex;
     align-items: center;
@@ -79,34 +80,50 @@ nav.container-menu .menu {
     visibility: hidden;
     top: -20rem;
     transition: 0.2s;
+    height: 100%;
 }
 
-nav.container-menu .menu ul li{
-    text-align: center;
-}
 
 nav.container-menu .menu ul {
     display: none;
     list-style: none;
-    gap: 2rem
+    height: 100%;
 }
 
+nav.container-menu .menu ul li{
+    text-align: center;
+    height: 100%;
+    transition: 0.2s background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.container-menu .menu ul li:hover, .li-selected{
+    background-color: var(--primary_blue);
+}
 
 /* Links */
 nav.container-menu .menu ul .dropdown-link {
     color: var(--link-web-color);
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
 
     transition: color 0.25s;
     position: relative;
 }
 
-nav.container-menu .menu ul .dropdown-link:hover{
-    color: var(--link-web-color-hover);
+nav.container-menu .menu ul .dropdown-link:hover,
+nav.container-menu .menu ul li.li-selected .dropdown-link   {
+    color: #fff;
 }
 
-nav.container-menu .menu ul .dropdown-link::after{
+/* nav.container-menu .menu ul .dropdown-link::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -119,7 +136,7 @@ nav.container-menu .menu ul .dropdown-link::after{
 
 nav.container-menu .menu ul .dropdown-link:hover::after {
     width: 100%;
-}
+} */
 
 
 /* Links no dropdown */
@@ -167,13 +184,17 @@ nav.container-menu.show-menu .menu {
     top: 0;
     left: 0;
 
+    overflow-y: hidden;
+    transition: .3s all;
+
     display: grid;
     place-content: center;
 }
 
 nav.container-menu.show-menu .menu ul {
+    width: 100vw;
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
 }   
 
 @media (min-width: 992px){
@@ -186,7 +207,6 @@ nav.container-menu.show-menu .menu ul {
     
     nav.container-menu .menu ul {
         display: flex;
-        gap: 2rem;
     }
     
     nav.container-menu .icon-menu {
@@ -194,7 +214,7 @@ nav.container-menu.show-menu .menu ul {
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1700px){
     nav.container-menu {
         max-width: 1120px;
         margin-left: auto;

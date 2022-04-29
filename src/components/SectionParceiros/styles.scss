@@ -8,3 +8,18 @@
     background-color: var(--primary_blue);
     height: 390px;
 }
+
+
+@media screen and (max-width: 900px) {
+    .title-parceiros {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title-parceiros {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

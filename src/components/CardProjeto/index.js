@@ -1,5 +1,5 @@
 import { Button } from "../Button";
-import "./styles.scss"
+import "./styles.scss";
 
 export function CardProjeto(){
     return(

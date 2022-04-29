@@ -22,3 +22,18 @@
         place-items: center;
     }
 }
+
+
+@media screen and (max-width: 450px) {
+    .nossa-equipe {
+        .blue-background {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .integrantes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

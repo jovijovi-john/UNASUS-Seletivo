@@ -1,4 +1,4 @@
-export function LinksUl(props){
+export function LinksUlHeader(props){
  
     const texts = [
         "Quem Somos",
@@ -10,17 +10,21 @@ export function LinksUl(props){
     ]
 
     return(
-            <ul>
+            <ul className="grid">
                 {texts.map((item) => {
                     
                     // esse if verifica e marca apenas a li que está selecionada
                     if (item === props.el) {
                         return(
-                            <li key={item} className="li-selected"><a href="">{item}</a></li>
+                            <li key={item} className="li-selected">
+                                <a className="dropdown-link" onClick={props.closeDropdown}  href="#">{item}</a>
+                            </li>
                         )
                     } else {
                         return(
-                            <li key={item}><a href="">{item}</a></li>
+                            <li key={item}>
+                                <a className="dropdown-link" onClick={props.closeDropdown} href="#">{item}</a>
+                            </li>
                         )
                     }
                 })}

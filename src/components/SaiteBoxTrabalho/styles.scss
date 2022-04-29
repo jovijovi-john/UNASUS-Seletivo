@@ -12,10 +12,32 @@
 
     p {
         margin-left: 20px;
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 }
 
 .middle-box {
     background-color: var(--baby_blue);
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: block;
+        a {
+            flex-direction: column;
+            justify-content: flex-start;
+            p{  
+                margin-top: 15px;
+                font-size: 1.5rem;
+                margin-left: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
 }

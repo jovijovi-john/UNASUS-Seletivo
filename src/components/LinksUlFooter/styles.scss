@@ -1,0 +1,28 @@
+ul.list-footer {
+    display: flex;
+    li {
+        a {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    ul.list-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        place-items: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    
+    ul.list-footer {
+        height: 300px;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -11,6 +11,7 @@
         grid-template-columns: 1fr 1fr;
 
         .contatos {
+            gap: 2rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -18,7 +19,7 @@
             padding-right:20px ;
             p {
                 max-width: 550px;
-                font-size: 24px;
+                font-size: 1.5rem;
             }
 
             .buttons {
@@ -29,7 +30,7 @@
                 justify-content: space-evenly;
 
                 a {
-                    font-size: 24px;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -39,5 +40,51 @@
             align-items: center;
             justify-content: center;
         }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .fale-conosco .container-contatos {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .contatos {
+            margin-top: 2rem;
+        }
+        
+        .buttons {
+            margin-top: 20px;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .fale-conosco {
+        padding: 60px 0;
+
+        .mapa img {
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fale-conosco .mapa img {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .fale-conosco .mapa img {
+        width: 300px;
+    }
+
+    
+    .fale-conosco .container-contatos .contatos .buttons a{
+        width: 100%;
+        font-size: 1.2rem;
     }
 }
